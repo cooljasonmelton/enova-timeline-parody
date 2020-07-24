@@ -5,8 +5,8 @@ import './Line.css';
 const Line = () => {
   return (
     <div className="Line">
-      big line 
-
+      <div className="arrow point-left"></div>
+      <div className="arrow point-right"></div>
     </div>
   );
 }

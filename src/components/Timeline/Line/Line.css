@@ -1,0 +1,24 @@
+.Line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow{
+    height: 1.5em;
+    width: 1.5em;
+
+    border-top: 0.5em solid #fff;
+    border-right: 0.5em solid #fff;
+}
+
+.point-left{
+    -webkit-transform: rotate(225deg);
+    -ms-transform: rotate(225deg);
+    transform: rotate(225deg);
+}
+.point-right{
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
