@@ -22,14 +22,18 @@
     background-color: #2873a7;
 
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
 } 
-.Timeline > h2 {
+
+.Timeline > h2 {    
+    padding: 2em 0 1.5em;
+    
     color: #ffffff;
     font-weight: 400;
     font-size: 30px;
 }
+
 
 .CardContainer{
     width: 100%;
