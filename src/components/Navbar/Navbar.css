@@ -60,3 +60,22 @@
 
     padding: 0 1em;
 }
+
+.nav-investor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img.down-arrow{
+    height: 1.2em;
+    padding: 0.4em 0 0 0.2em;
+    background: transparent;
+
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+}
+
+img.down-arrow:hover {
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
