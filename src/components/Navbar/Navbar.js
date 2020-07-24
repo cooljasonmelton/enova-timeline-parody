@@ -23,7 +23,7 @@ const Navbar = () => {
           <div className="nav-company"> Company </div>
           <div> Brands </div>
           <div> Culture </div>
-          <div> Careers </div>
+          <div className="nav-careers"> Careers </div>
         </div>
       
       {message && (

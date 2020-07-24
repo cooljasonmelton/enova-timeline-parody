@@ -43,7 +43,6 @@
     
     background: #42aadd;
     content: '';
-    
 }
    
 .nav-company {
@@ -91,4 +90,21 @@ img.down-arrow{
 img.down-arrow:hover {
     -webkit-transform: rotate(-180deg);
     transform: rotate(-180deg);
+}
+
+.nav-careers{
+    position: relative
+}
+
+.nav-careers::after {
+    position: absolute;
+    top: -0.1em;
+    right: -0.9em;
+
+    border-radius: 50%;
+    width: 0.6em;
+    height: 0.6em;    
+    
+    background: red;
+    content: '';
 }
