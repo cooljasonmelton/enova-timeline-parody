@@ -22,9 +22,11 @@
     background-color: #2873a7;
 
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
 } 
+
 .Timeline > h2 {
     color: #ffffff;
     font-weight: 400;

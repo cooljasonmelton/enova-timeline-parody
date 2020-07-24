@@ -5,6 +5,7 @@ import './Line.css';
 const Line = () => {
   return (
     <div className="Line">
+      big line 
 
     </div>
   );
