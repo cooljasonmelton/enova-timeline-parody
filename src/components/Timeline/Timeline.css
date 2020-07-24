@@ -1,6 +1,40 @@
 .TimelineContainer{
+    position: relative;
+    /* switcb back to white */
+    background-color: gray; 
+
     height: 50%;
     width: 100%;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+.Timeline{
+    position: absolute;
+    top: 0;
+    height: 87%;
+    width: 100%;
     background-color: #2873a7;
+} 
+
+.CardContainer{
+    width: 100%;
+    height: 24%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.Card{
+    z-index: 1;
+
+    width: 65%;
+    height: 100%;
+    border: 1px solid black;;
+    text-align: center;
+    background-color: #ffffff;
 }

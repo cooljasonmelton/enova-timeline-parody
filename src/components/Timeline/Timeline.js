@@ -1,9 +1,12 @@
 import React from 'react';
+//components
 import './Timeline.css';
 
 const Timeline = () => {
   return (
     <div className="Timeline">
+      Timeline
+       
 
     </div>
   );
