@@ -10,7 +10,7 @@ const Timeline = () => {
   return (
     <div className="Timeline">
       <h2>Timeline</h2>
-      <Line/>
+      <Line className="line-comp"/>
        
 
     </div>

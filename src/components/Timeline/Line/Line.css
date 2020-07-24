@@ -1,15 +1,106 @@
 .Line{
+    height: 4em;
+    width: 90%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+}
+
+.Years{
+    width: 100%;
+
     display: flex;
     justify-content: center;
+}
+
+.year-list{
+    width: 50%;
+
+    display: flex;
+    justify-content: center;
+    
+    padding-bottom: 0.3em;
+}
+
+.year::after{
+    position: absolute;
+    bottom: -1.7em;
+    left: 45%;
+
+    height: 2em;
+    width: 0.7em;
+    
+    background-color: #1b5580;
+    content: '';   
+}
+
+.year{
+    position: relative; 
+    
+    padding: 0 1em;
+    
+    color: #7eb3d0;
+    
+    line-height: 2.5em;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.year.active{
+    font-size: 48px;
+    color: #fff;
+    line-height: 1em;
+    padding: 0 1em 0.5em 1em;
+
+}
+
+.year.active::after{
+    position: absolute;
+    bottom: -1.3em;
+    left: 45%;
+
+    height: 1.7em;
+    width: 0.5em;
+    
+    background-color: #1b5580;
+    content: '';   
+}
+
+
+/*  ARROWS  &&  TICKER */
+.ticker-container{
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+}
+
+.ticker{
+    width: 100%;
+    height: 1.2em;
+
+    background: repeating-linear-gradient(
+    to right,
+    #fff,
+    #fff 0.1em,
+    #2873a7 0.2em,
+    #2873a7 1.1em
+    );
 }
 
 .arrow{
     height: 1.5em;
     width: 1.5em;
-
+    
     border-top: 0.5em solid #fff;
     border-right: 0.5em solid #fff;
+}
+
+.arrow.end{
+    border-top: 0.5em solid #7eb3d0;
+    border-right: 0.5em solid #7eb3d0;
 }
 
 .point-left{
