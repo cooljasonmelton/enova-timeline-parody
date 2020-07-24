@@ -1,6 +1,6 @@
 .TimelineContainer{
-    position: relative;
     z-index: -1;
+    position: relative;
     background-color: #ffffff; 
 
     height: 50%;
@@ -20,7 +20,16 @@
     width: 100%;
 
     background-color: #2873a7;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 } 
+.Timeline > h2 {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 30px;
+}
 
 .CardContainer{
     width: 100%;
@@ -48,7 +57,7 @@
     text-align: left;
     line-height: 1.5em;
     font-size: 18px;
-    -webkit-text-stroke: 0.5px #e7e7e7;
+    -webkit-text-stroke: 0.3px #e7e7e7;
 }
 
 .Card > p {

@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+
+//styling
 import './Navbar.css';
 
 // images
