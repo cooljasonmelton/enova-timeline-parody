@@ -1,10 +1,19 @@
 import React from 'react';
-import './App.css';
+
+//styling
+import './Timeline.css';
+
+// components
+import Timeline from './Timeline';
+import CardContainer from './CardContainer';
 
 const TimelineContainer = () => {
   return (
     <div className="TimelineContainer">
+      <Timeline/>
+      <CardContainer/>
 
+ 
     </div>
   );
 }

@@ -1,10 +1,9 @@
-.Navbar{
-    box-shadow: 1px 1px 1px #e7e7e7;
-    animation: moveDown 0.5s ease-in-out;   
-
+.Navbar{    
     position: fixed;
     top: 0;
     left: 0;
+    
+    box-shadow: 1px 2px 3px #e7e7e7;
 
     height: 4em;
     width: 100%;
