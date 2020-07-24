@@ -1,9 +1,10 @@
 import React from 'react';
-import './App.css';
+import './Timeline.css';
 
 const TimelineContainer = () => {
   return (
     <div className="TimelineContainer">
+
 
     </div>
   );

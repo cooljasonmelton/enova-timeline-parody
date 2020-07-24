@@ -1,6 +1,20 @@
 .App{
+  position: relative;
+
   width: 100vw;
   height: 150vh;
+  
+  padding-top: 8em; 
+}
+
+.footer{
+  position: absolute;
+  bottom: 2em;
+
+  width: 100%;
+  
+  display: flex;
+  justify-content: center;
 }
 
 
