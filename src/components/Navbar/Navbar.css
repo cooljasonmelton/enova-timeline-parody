@@ -59,6 +59,7 @@
     right: 0;
 
     padding: 0 1em;
+
 }
 
 .nav-investor{
@@ -71,8 +72,8 @@ img.down-arrow{
     padding: 0.4em 0 0 0.2em;
     background: transparent;
 
-    -webkit-transition: -webkit-transform .8s ease-in-out;
-    transition: transform .8s ease-in-out;
+    -webkit-transition: -webkit-transform .5s ease-in-out;
+    transition: transform .5s ease-in-out;
 }
 
 img.down-arrow:hover {

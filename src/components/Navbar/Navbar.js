@@ -7,13 +7,13 @@ import downArrow from '../../images/down-arrow.svg'
 
 const Navbar = () => {
   const [message, setMessage] = useState(false)
-
-
-
   return (
     
     <>
-      <div className="Navbar">
+      <div className="Navbar" 
+        onMouseOver={() => setMessage(true)}
+        onMouseLeave={() => setMessage(false)}>
+
         <img className="enova-logo" src={enovaLogo} />
         <div className="nav-options">
           <div className="nav-investor">
@@ -25,10 +25,12 @@ const Navbar = () => {
           <div> Culture </div>
           <div> Careers </div>
         </div>
-
+      
+      {message && (
         <div className="nav-message">
           For Display Only
-        </div>
+        </div>)}
+
       </div>
 
     </>
