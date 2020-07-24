@@ -8,7 +8,8 @@ const Navbar = () => {
 
 
   return (
-    <div onScroll={null} className="Navbar">
+    <>
+    <div className="Navbar">
       <img className="enova-logo" src={enovaLogo} />
       <div className="nav-options">
         <div> Investor Relations </div>
@@ -16,8 +17,13 @@ const Navbar = () => {
         <div> Brands </div>
         <div> Culture </div>
         <div> Careers </div>
+      </div>      
+      <div className="nav-message">
+        For Display Only
       </div>
     </div>
+
+    </>
   );
 }
 

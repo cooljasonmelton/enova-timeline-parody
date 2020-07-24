@@ -21,7 +21,7 @@
 }
 
 .enova-logo{
-    height: 75%;
+    height: 71%;
     flex-grow: 0;
 }
 
@@ -51,4 +51,12 @@
 
    line-height: 2.5em;
    font-weight: 900;
+}
+
+.nav-message{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    padding: 0 1em;
 }
