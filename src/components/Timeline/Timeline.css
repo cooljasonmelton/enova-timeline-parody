@@ -72,29 +72,24 @@
 /* CARD DISAPPEAR ANIMATION */
 
 @keyframes fly-past{
-    10% {
-        right: 5%
+    0%{
+        right: 0;
     }
-    15%{
-        opacity: 0.8;
-        left: 10%
-    }
-    100% {        
+    100%{
+        left: 100vw;
         opacity: 0;
-        right: 20vw;
     }
-    
 }
 
 @keyframes pseudo-fly-past{
-    /* from {
-        opacity: 0;
-        left: 40vw;
+    0%{
+        right: 100vw;
     }
-    to {
+    100%{
+        right: 0;
         opacity: 1;
-        left: 0%;
-    } */
+    }
+
 }
 
 .Card.past{
@@ -110,4 +105,5 @@
 .Card.pseudo.past{
     animation-name: pseudo-fly-past;
     animation-duration: 1s;
+    animation-timing-function: linear;
 }
