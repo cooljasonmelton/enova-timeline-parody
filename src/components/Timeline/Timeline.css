@@ -72,23 +72,12 @@
 /* CARD DISAPPEAR ANIMATION */
 
 @keyframes fly-past{
-    0%{
-        right: 0;
-    }
-    100%{
-        left: 100vw;
-        opacity: 0;
-    }
+
+    
 }
 
 @keyframes pseudo-fly-past{
-    0%{
-        right: 100vw;
-    }
-    100%{
-        right: 0;
-        opacity: 1;
-    }
+
 
 }
 
