@@ -85,6 +85,13 @@
     content: '';   
 }
 
+.year:hover{
+    text-decoration: underline;
+}
+.year.active:hover{
+    text-decoration: none;
+}
+
 
 /*  ARROWS  &&  TICKER */
 .ticker-container{

@@ -7,11 +7,11 @@ import './Line.css';
 import Years from './Years';
 
 
-const Line = () => {
+const Line = props => {
   return (
     <div className="Line">
 
-      <Years/>
+      <Years setYear={props.setYear} year={props.year}/>
 
     <div className="ticker-container">
       <div className="point-left arrow end"> </div>
