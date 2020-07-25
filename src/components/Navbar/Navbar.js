@@ -16,7 +16,7 @@ const Navbar = () => {
         onMouseOver={() => setMessage(true)}
         onMouseLeave={() => setMessage(false)}>
 
-        <img className="enova-logo" src={enovaLogo} />
+        <img className="enova-logo" alt="logo" src={enovaLogo} />
         <div className="nav-options">
           <div className="nav-investor">
             <div> Investor Relations </div>

@@ -26,7 +26,7 @@
 .year::after{
     position: absolute;
     bottom: -1.7em;
-    left: 45%;
+    left: 41%;
 
     height: 2em;
     width: 0.7em;
@@ -37,7 +37,6 @@
 
 .year{
     position: relative; 
-    
     padding: 0 1em;
     
     color: #7eb3d0;
@@ -45,6 +44,24 @@
     line-height: 2.5em;
     font-size: 30px;
     font-weight: 900;
+
+    cursor: pointer;
+}
+
+@keyframes bigify {
+    from {    
+        padding: 0 1em;
+        color: #7eb3d0;
+        line-height: 2.5em;
+        font-size: 30px;
+        font-weight: 900;    
+    }
+    to {
+        font-size: 48px;
+        color: #fff;
+        line-height: 1em;
+        padding: 0 1em 0.5em 1em;
+    }
 }
 
 .year.active{
@@ -52,7 +69,8 @@
     color: #fff;
     line-height: 1em;
     padding: 0 1em 0.5em 1em;
-
+    animation-name: bigify;
+    animation-duration: 0.3s;
 }
 
 .year.active::after{
@@ -65,6 +83,13 @@
     
     background-color: #1b5580;
     content: '';   
+}
+
+.year:hover{
+    text-decoration: underline;
+}
+.year.active:hover{
+    text-decoration: none;
 }
 
 
