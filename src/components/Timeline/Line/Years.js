@@ -25,11 +25,23 @@ const Years = () => {
           onClick={e => setActive(e.target.innerText)}>
           2019
         </div>
-        <div className="year">2019</div>
-        <div className="year">2018</div>
-        <div className="year">2017</div>
-        <div className="year">2016</div>
-        <div className="year">2015</div>
+        <div className={`year ${activeYear('2018')}`}
+          onClick={e => setActive(e.target.innerText)}>
+          2018
+        </div>
+        <div className={`year ${activeYear('2017')}`}
+          onClick={e => setActive(e.target.innerText)}>
+          2017
+        </div>
+        <div className={`year ${activeYear('2016')}`}
+          onClick={e => setActive(e.target.innerText)}>
+          2016
+        </div>
+        <div className={`year ${activeYear('2015')}`}
+          onClick={e => setActive(e.target.innerText)}>
+          2015
+        </div>
+
       </div>
     </div>
   );
