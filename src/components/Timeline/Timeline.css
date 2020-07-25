@@ -47,9 +47,10 @@
 
 .Card{
     z-index: 0;
+    position: absolute;
 
     width: 63%;
-    height: 100%;
+    /* height: 100%; */
 
     box-shadow: 1px 2px 3px #e7e7e7;
     border: 1px solid #e7e7e7;
@@ -58,7 +59,6 @@
     display: flex;
     align-items: center;
    
-    text-align: left;
     line-height: 1.5em;
     font-size: 18px;
     -webkit-text-stroke: 0.3px #e7e7e7;
@@ -66,4 +66,48 @@
 
 .Card > p {
     padding: 1em;
+}
+
+
+/* CARD DISAPPEAR ANIMATION */
+
+@keyframes fly-past{
+    10% {
+        right: 5%
+    }
+    15%{
+        opacity: 0.8;
+        left: 10%
+    }
+    100% {        
+        opacity: 0;
+        right: 20vw;
+    }
+    
+}
+
+@keyframes pseudo-fly-past{
+    /* from {
+        opacity: 0;
+        left: 40vw;
+    }
+    to {
+        opacity: 1;
+        left: 0%;
+    } */
+}
+
+.Card.past{
+    animation-name: fly-past;
+    animation-duration: 1s;
+}
+
+.Card.pseudo{
+    position: absolute;
+    opacity: 0;
+}
+
+.Card.pseudo.past{
+    animation-name: pseudo-fly-past;
+    animation-duration: 1s;
 }

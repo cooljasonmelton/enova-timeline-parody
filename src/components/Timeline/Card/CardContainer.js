@@ -35,6 +35,9 @@ const CardContainer = props => {
       <div className={`Card ${tense}`}>
         <p>{CardObject[props.year]}</p> 
       </div>
+      <div className={`Card pseudo ${tense}`}>
+        <p>{CardObject[props.year]}</p> 
+      </div>
     </div>
   );
 }
