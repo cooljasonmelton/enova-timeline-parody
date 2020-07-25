@@ -12,5 +12,5 @@ I don't own the copyright to any images. I am not making any money off this. If 
 
 
 NEXT
-- cards animated and fly to left or right corresponding to year clicked and ~time~
+- cards animated and fly to left or right corresponding to year clicked and ~ time ~
 - scroll out more years not on the list
