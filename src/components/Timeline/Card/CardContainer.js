@@ -1,4 +1,4 @@
-import React, {useState, useRef} from 'react';
+import React, { useState } from 'react';
 
 //styling
 import '../Timeline.css';
@@ -6,34 +6,44 @@ import '../Timeline.css';
 // data
 import CardObject from './CardObject'
 
-//components
-
 const CardContainer = props => {
   const { year } = props
 
-  const prevYear = useRef(props.year);
+  const [tense, setTense] = useState('present')
+  const [stateYear, setstateYear] = useState(year)
 
-  const updatePrevYear = () => {
-    if (prevYear === props.year) return
-    prevYear.current = props.year
-  }
 
   const animateRender = () => {
-    let numPrevYear = parseInt(prevYear.current)
-    let numYear = parseInt(year)
-    if (numPrevYear == numYear) return
-    let tense = ""
-    if (numPrevYear >= numYear) tense = "past"
-    if (numPrevYear <= numYear) tense = "future"
-    updatePrevYear()
-    return tense
+    if (year === stateYear) return 
+    // compare clicked year to previously clicked year
+    // sets past if year is less, future if year is more
+    let iYear = parseInt(year)
+    let istateYear = parseInt(stateYear)
+    if (iYear < istateYear) {
+      setstateYear(year)
+      setTense('past')
+    } 
+    if (iYear > istateYear) {
+      setstateYear(year)
+      setTense('future')
+    } 
   }
 
   return (
     <div className="CardContainer" >
-      <div className={`Card ${animateRender()}`}>
-        <p>{CardObject[props.year]}</p> 
+  
+      {animateRender() /* trigger animation on render */}
+
+      <div className={`Card ${tense}`}>
+        <p>{CardObject[year]}</p> 
       </div>
+
+{/* 
+      <div className={`Card pseudo ${tense}`}>
+        <p>{CardObject[year]}</p> 
+      </div> */}
+
+
     </div>
   );
 }
