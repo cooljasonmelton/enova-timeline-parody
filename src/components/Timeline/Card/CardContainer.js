@@ -12,22 +12,24 @@ const CardContainer = props => {
   const [tense, setTense] = useState('present')
   const [stateYear, setstateYear] = useState(year)
 
-
   const animateRender = () => {
     if (year === stateYear) return 
     // compare clicked year to previously clicked year
     // sets past if year is less, future if year is more
+    setstateYear(year)
     let iYear = parseInt(year)
     let istateYear = parseInt(stateYear)
+
     if (iYear < istateYear) {
-      setstateYear(year)
       setTense('past')
     } 
     if (iYear > istateYear) {
-      setstateYear(year)
       setTense('future')
     } 
   }
+
+
+
 
   return (
     <div className="CardContainer" >
@@ -36,13 +38,11 @@ const CardContainer = props => {
 
       <div className={`Card ${tense}`}>
         <p>{CardObject[year]}</p> 
-      </div>
-
-{/* 
+      </div>    
+      
       <div className={`Card pseudo ${tense}`}>
         <p>{CardObject[year]}</p> 
-      </div> */}
-
+      </div> 
 
     </div>
   );

@@ -63,6 +63,15 @@
     font-size: 18px;
     -webkit-text-stroke: 0.3px #e7e7e7;
 
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden; 
+    right: 1200px;
+
+}
+.Card.pseudo{
+    visibility: hidden; 
+    left: 1200px;
 }
 
 .Card > p {
@@ -70,10 +79,41 @@
 }
 
 
-
-
-
-
-
-
 /* CARD DISAPPEAR ANIMATION */
+
+.Card.past{
+    opacity: 1;
+    visibility: visible; 
+    right: 17.5%;
+}
+
+.Card.future{
+    opacity: 1;
+    visibility: visible; 
+    right: 1200px;
+}
+
+.Card.pseudo.past{
+    opacity: 1;
+    visibility: visible; 
+    left: 1200px;
+}
+
+.Card.pseudo.future{
+    opacity: 1;
+    visibility: visible; 
+    left: 17.5%;
+
+}
+
+.middle{
+    opacity: 0;
+    visibility: hidden; 
+    left: 17.5%;
+}
+
+.middle.show{
+    opacity: 1;
+    visibility: visible; 
+    left: 17.5%;
+}
