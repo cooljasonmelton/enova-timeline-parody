@@ -44,6 +44,10 @@ const CardContainer = props => {
         <p>{CardObject[year]}</p> 
       </div> 
 
+      <div className={`Card placeholder ${tense === 'present' ? 'present' : 'hide'}`}>
+        <p>{CardObject[year]}</p> 
+      </div> 
+
     </div>
   );
 }

@@ -103,17 +103,16 @@
     opacity: 1;
     visibility: visible; 
     left: 17.5%;
-
 }
 
-.middle{
-    opacity: 0;
-    visibility: hidden; 
-    left: 17.5%;
-}
-
-.middle.show{
+.Card.placeholder.present{
     opacity: 1;
     visibility: visible; 
     left: 17.5%;
 }
+.Card.placeholder.hide{
+    opacity: 0;
+    visibility: hidden; 
+    left: 1200px;
+}
+
