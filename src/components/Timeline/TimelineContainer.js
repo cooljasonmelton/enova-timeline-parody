@@ -6,6 +6,8 @@ import './Timeline.css';
 // components
 import Timeline from './Timeline';
 import CardContainer from './Card/CardContainer';
+import BCardContainer from './Card/CardContainer';
+
 
 const TimelineContainer = () => {
   const [year, setYear] = useState('2020')
@@ -13,7 +15,10 @@ const TimelineContainer = () => {
   return (
     <div className="TimelineContainer">
       <Timeline setYear={setYear} year={year}/>
-      <CardContainer year={year}/>
+
+      <BCardContainer year={year}/>
+
+      {/* <CardContainer year={year}/> */}
 
  
     </div>
