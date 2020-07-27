@@ -1,0 +1,17 @@
+.Card.future{
+    opacity: 0;
+    visibility: hidden; 
+    left: 1200px; 
+}
+
+.Card.past{
+    opacity: 0;
+    left: -1200px; 
+    visibility: hidden; 
+}
+
+.Card.present{
+    left: 17.5%;
+    opacity: 1;
+    visibility: visible; 
+}

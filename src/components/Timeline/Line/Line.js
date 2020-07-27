@@ -16,7 +16,7 @@ const Line = props => {
     <div className="ticker-container">
       <div className="point-left arrow end"> </div>
       <div className="ticker"> </div>
-      <div className="point-right arrow"></div>
+      <div className="point-right arrow end"></div>
     </div>
     </div>
   );
