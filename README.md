@@ -21,3 +21,6 @@ I don't own the copyright to any images. I am not trying to make any money off t
 
 * Jason Melton: jason.melton2@gmail.com
 
+### thanks
+* special thanks to Joe Davis for writing this helpful <a href="https://medium.com/@joethedave/achieving-ui-animations-with-react-the-right-way-562fa8a91935"> blog </a>
+
