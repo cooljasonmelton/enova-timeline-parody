@@ -1,4 +1,4 @@
-## Enova Timeline... Parody? 
+## Enova Timeline Parody
 
 ### what is this?
 I've recreated a timeline feature I found on this <a href='https://www.enova.com/company/'>page</a> However, instead of showing off the history of Enova, my version shows the history of me discovering apple and cheese sandwiches.
@@ -20,6 +20,10 @@ I've recreated a timeline feature I found on this <a href='https://www.enova.com
 * React's create-react-app
 * custom CSS
 ~~ that's it ~~
+
+### install it
+1. clone and open repo 
+2. npm install && npm start
 ### also
 I don't own the copyright to any images. I am not trying to make any money off this. Just learn and earn brownie points if I'm ever interviewed. If it's an issue, get ahold of me (email below). I'll remove them.
 
